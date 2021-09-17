@@ -1,3 +1,8 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,9 +29,9 @@
 
 .logo img{
     float: left;
-    width: 100px;
-    height: 123px;
-    margin: 10px 5px 0px 40px;
+    width: 10rem;
+    height: 12.3rem;
+    margin: 1rem 0.5rem 0rem 4rem;
 }
 a{
     text-decoration: none;
@@ -43,9 +48,9 @@ a{
 
 ul li{
     display: inline-block; 
-    padding-left:10px;
-    padding-top: 20px;
-    font-size:30px;
+    padding-left:1rem;
+    padding-top: 2rem;
+    font-size:3rem;
     font-weight: bold;
     font-family:raleway;
 }
@@ -54,3 +59,164 @@ ul li:hover{
     color:orange;
 }
 
+button{
+    color:#fffb04;
+    padding: 1rem 2.5rem;
+    background:black ;
+    border: 0.2rem solid #fbfcfd;
+    border-radius: 2rem ;
+    outline: none;
+    cursor: pointer;
+}
+.contenido{
+    color:#000000;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    padding: 1.5rem 2.5rem;
+    background:rgb(98, 110, 223) ;
+    border: 0.2rem solid #000000;
+    border-radius: 1rem ;
+    outline: none;
+    z-index: 2;
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 6.5rem;
+    font-weight: bold;
+    margin: 1rem 0 3rem;
+    line-height: 8rem;
+    color: #ffffff;
+}
+
+.side-bar{
+    width: 5rem;
+    height: 100vh;
+    background: linear-gradient(#000000,#3c5962,#6798a8,#3c5962,#000000);
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+/* Panel Nosotros */
+@media (min-width: 768px) {
+    .panel-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.card {
+    text-align: center;
+    border: 0.5rem solid #019bf1;
+    border-radius: 1.8rem;
+    padding: 1.6rem ;
+    margin: auto 7rem;
+}
+@media (min-width: 768px) {
+    .card {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.card h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.card .cuota span{
+    color: #e5e9eb;
+}
+
+.modelo{
+    font-size: 1.5rem
+}
+
+.cuota{
+    font-size: 1.4rem;
+}
+
+.cuota span{
+    font-size: 2.8rem;
+}
+
+.social-links img, .enlaces-utiles img{
+width: 2.5rem;
+margin: 0.5rem auto;
+cursor: pointer;
+}
+
+.social-links{
+    width: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.enlaces-utiles{
+    width: 5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.celulares{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    bottom: 0;
+}
+
+/* animiacion de las balones*/
+.celulares img{
+    width: 5rem;
+    animation: cell 7s linear infinite;
+}
+
+@keyframes cell {
+    0%{
+        transform:translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform:translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.celulares img:nth-child(1){
+    animation-delay: 0.5s;
+    width: 3rem;
+}
+.celulares img:nth-child(2){
+    animation-delay: 6s;
+    width: 7rem;
+
+}
+.celulares img:nth-child(3){
+    animation-delay: 3s;
+    width: 6rem;
+}
+.celulares img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.celulares img:nth-child(5){
+    animation-delay: 2s;
+    width: 2rem;
+}
+.celulares img:nth-child(6){
+    animation-delay: 7s;
+    width: 2.5rem;
+}
+.celulares img:nth-child(7){
+    animation-delay: 5s;
+    width: 4rem;
+}
