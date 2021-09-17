@@ -1,6 +1,6 @@
 .titulo{
-    text-align:center;
-    font-size: 40px;
+  font-family:'Times New Roman', Times, serif;
+  position: center;
 
 }
 .container{
@@ -14,19 +14,19 @@
 
 }
 .image{
-    position: relative;
-    border: 1px solid;
-    height: auto;
+  float: left;
+  width: 420px;
+  padding-left: 150px;
+  padding-top: 50px;
 
 }
 .image:hover {
     filter: opacity(.5);
 }
 .texto{
-    position: relative;
-    top: 190px;
-    font-size: 20px;
-    left: 220px;
+  float: right;
+  padding-right: 140px;
+  padding-top: 120px;
 
 }
 
@@ -34,4 +34,20 @@
     position: relative;
    font-size: 20px;
     bottom: 230px;
+}
+
+.descriptionpage{
+    background-color:wheat;
+    opacity: 0.9;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+.description{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color:black;
+    font-weight:bold;
 }
